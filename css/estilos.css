@@ -1,0 +1,216 @@
+/* BARRA LATERAL DE REDES */
+.sidebar {
+  position: fixed;
+  top: 50%; /* Ajusta la posición vertical de la barra */
+  left: 20px; /* Ajusta la posición horizontal de la barra */
+  transform: translateY(-50%); /* Centra verticalmente la barra */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.sidebarblanco a {
+  color: #ffffff;
+}
+
+.social-name {
+  display: none; /* Oculta el nombre completo inicialmente */
+}
+
+.sidebar a:hover .social-name {
+  display: inline; /* Muestra el nombre completo cuando se hace hover */
+  color: #555; /* Cambia el color del nombre */
+  font-weight: normal; /* Restaura el peso de la fuente a normal */
+  margin-left: 5px; /* Agrega un margen a la izquierda del nombre */
+}
+
+.sidebar a:hover .fab.fa-linkedin {
+  color: #0077B5; /* Cambia el color al azul de LinkedIn */
+}
+
+.sidebar a:hover .fab.fa-github {
+  color: #211F1F; /* Cambia el color al negro de GitHub */
+}
+
+.sidebar a:hover .fab.fa-instagram {
+  color: #E4405F; /* Cambia el color al rosa de Instagram */
+}
+
+.sidebar a:hover .fab.fa-twitter {
+  color: #1DA1F2; /* Cambia el color al azul de Twitter */
+}
+
+.sidebar a:hover .fab.fa-discord {
+  color: #7289DA; /* Cambia el color al azul de Discord */
+}
+
+.sidebar a:hover .fab.fa-youtube {
+  color: #FF0000; /* Cambia el color al rojo de YouTube */
+}
+
+.sidebar a:hover .fab.fa-twitch {
+  color: #9146FF; /* Cambia el color al morado de Twitch */
+}
+
+
+/* BARRA SUPERIOR */
+
+.navbar {
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin: 5px;
+}
+
+.navbar-links li a.blurred {
+  color: #555;
+  filter: blur(1.5px);
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+/* BOTON DE CAMBIO DE COLOR DE PAGINA EN LA BARRA SUPERIOR */
+
+#cambiarFondoBtnContainer {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 30px;
+  background-color: #8d9eac;
+  border-radius: 200px;
+  margin: auto;
+  cursor: pointer;
+  pointer-events: all;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.5s ease;
+}
+
+#cambiarFondoBtn {
+  width: 16px;
+  height: 16px;
+  border-radius: 80%;
+  background-color: yellow;
+  transition: left 0.5s ease, background-color 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
+#cambiarFondoBtn.luna {
+  background-color: #000000;
+  left: 38px;
+}
+
+
+/* Estilos de las tarjetas */
+.tarjeta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 60px;
+  display: none;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+}
+
+.tarjeta p {
+  margin-bottom: 0;
+}
+
+.tarjeta img {
+  border-radius: 50%;
+  width: 200px; /* Ajusta el tamaño de la imagen según tus preferencias */
+  height: 200px; /* Ajusta el tamaño de la imagen según tus preferencias */
+  object-fit: cover; /* Asegura que la imagen se ajuste al contenedor manteniendo su proporción */
+}
+
+.tarjeta img.no-circular {
+  border-radius: initial;
+  object-fit: contain;
+}
+
+.tarjeta img.no-circular:hover {
+  border-radius: 30%;
+  transform: scale(2.0); /* Aplica un zoom del 110% al pasar el mouse por encima */
+  object-fit: unset;
+}
+
+/* ESTILOS PARA HABILIDADES */
+
+.columna {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+.columna h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.columna ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.columna ul li i {
+  margin-right: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .tarjeta {
+    flex-direction: column;
+  }
+}
+
