@@ -41,31 +41,24 @@
 .sidebar a:hover .fab.fa-linkedin {
   color: #0077B5; /* Cambia el color al azul de LinkedIn */
 }
-
 .sidebar a:hover .fab.fa-github {
   color: #211F1F; /* Cambia el color al negro de GitHub */
 }
-
 .sidebar a:hover .fab.fa-instagram {
   color: #E4405F; /* Cambia el color al rosa de Instagram */
 }
-
 .sidebar a:hover .fab.fa-twitter {
   color: #1DA1F2; /* Cambia el color al azul de Twitter */
 }
-
 .sidebar a:hover .fab.fa-discord {
   color: #7289DA; /* Cambia el color al azul de Discord */
 }
-
 .sidebar a:hover .fab.fa-youtube {
   color: #FF0000; /* Cambia el color al rojo de YouTube */
 }
-
 .sidebar a:hover .fab.fa-twitch {
   color: #9146FF; /* Cambia el color al morado de Twitch */
 }
-
 
 /* BARRA SUPERIOR */
 
@@ -108,7 +101,7 @@
 /* BOTON DE CAMBIO DE COLOR DE PAGINA EN LA BARRA SUPERIOR */
 
 #cambiarFondoBtnContainer {
-  position: fixed;
+  position: relative;
   top: 10px;
   right: 10px;
   width: 60px;
@@ -213,6 +206,28 @@
     flex-direction: column;
   }
 }
+
+/* ESTILOS PARA CONTACTO */ 
+
+.sidebar2 a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.social2-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social2-links a {
+  display: inline-block;
+  margin-right: 10px; /* Ajusta el margen entre los elementos si es necesario */
+}
+
+
 
 /* POFROIO CONTADOR */ 
 
