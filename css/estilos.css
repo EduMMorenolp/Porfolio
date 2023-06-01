@@ -262,3 +262,26 @@
   border-radius: 4px;
   text-decoration: none; 
 }
+
+/* LOGOS HERRAMIENTAS */
+
+.logosherramientas {
+  display: inline-block;
+  padding: 10px;
+  list-style: none;
+}
+
+.logosherramientas img {
+  width: 20px; /* Ajusta el ancho según tu preferencia */
+  height: 20px; /* Ajusta la altura según tu preferencia */
+  margin-right: 10px; /* Espacio entre los iconos si deseas */
+}
+
+.proyecto-contenedor {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
