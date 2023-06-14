@@ -103,8 +103,7 @@
 #cambiarFondoBtnContainer {
   position: relative;
   top: 1px;
-  right: 10px;
-  width: 60px;
+  width: 90px;
   height: 30px;
   background-color: #8d9eac;
   border-radius: 200px;
@@ -116,8 +115,8 @@
 }
 
 #cambiarFondoBtn {
-  width: 16px;
-  height: 16px;
+  width: 35px;
+  height: 25px;
   border-radius: 80%;
   background-color: yellow;
   transition: left 0.5s ease, background-color 0.5s ease;
@@ -129,7 +128,25 @@
 
 #cambiarFondoBtn.luna {
   background-color: #000000;
+  width: 50px;
+  height: 25px;
   left: 38px;
+}
+
+#cambiarFondoBtn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+}
+
+#cambiarFondoBtn span.hidden {
+  opacity: 0;
+}
+
+#cambiarFondoBtn.luna #nightText {
+  opacity: 1;
 }
 
 

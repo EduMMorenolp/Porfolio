@@ -50,9 +50,11 @@
     </div>
   </nav>
   <!-- BOTON DE CAMBIO DE COLOR DE PAGINA EN LA BARRA SUPERIOR -->
-  </div>
   <div id="cambiarFondoBtnContainer">
-    <div id="cambiarFondoBtn"></div>
+    <div id="cambiarFondoBtn">
+      <span id="dayText"><p style="color: #000000;">Dia</p></span>
+      <span id="nightText" class="hidden"><p style="color: rgb(255, 255, 255);">Noche</p></span>
+    </div>
   </div>
 
   <!-- Sobre Mi -->
@@ -372,6 +374,8 @@
 
   <script>
     var cambiarFondoBtn = document.getElementById("cambiarFondoBtn");
+    var dayText = document.getElementById("dayText");
+    var nightText = document.getElementById("nightText");
     var sidebarItems = document.querySelectorAll(".sidebar li");
 
     cambiarFondoBtn.addEventListener("click", function () {
@@ -384,7 +388,8 @@
         link.classList.toggle("sidebarblanco");
       });
 
-
+      dayText.classList.toggle("hidden");
+      nightText.classList.toggle("hidden");
     });
 
   </script>
